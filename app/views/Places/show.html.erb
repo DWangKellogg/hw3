@@ -1,0 +1,14 @@
+<h1><%= @place.name %></h1>
+
+<h3>Posts</h3>
+<ul>
+    <% for post in @place.posts%>
+        <li>
+            <%= contact.title%>, <%= post.posted_on %> 
+        </li>
+    <% end %>
+</ul>
+
+<a href="/posts/new?post_id=<%= @post.id%>">Add Post</a>
+
+<p><a href="/posts">Back to All Posts</a></p>
